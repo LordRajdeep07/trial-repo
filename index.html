@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/jpg" href="images/kavach logo.png">
+    <title>Kavach - Your Safety, Our Priority</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div class="hero">
+        <video autoplay loop muted playsinline class="back-video" >
+            <source src="images/kavach 3.mp4"  type="video/mp4">
+        </video>
+        <div class="content">
+            <img src="images/kavach logo.png" height="250" class="logo">
+            <h1>Your Safety, Our Priority.</h1>
+            <a href="#features" class="btn-explore">Explore</a>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section section"> 
+        <div class="container">
+            <h2>Features</h2>
+
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <h3>REAL-TIME ALERTS</h3>
+                    <p>Receive Instant Alerts To Stay Safe And Informed.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>SECURE REPORTS</h3>
+                    <p>File Secure Reports Directly From The Portal.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>COMMUNITY SUPPORT</h3>
+                    <p>Connect With Local Authorities And Communities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login / Sign Up Section -->
+    <section class="login-section section">
+        <a href="adminlogin.html" class="btn-login">Admin</a>
+        <a href="userlogin.html" class="btn-login">User</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section">
+        <div class="container">
+            <h2 style="text-align: center;">Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 KAVACH. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Smooth Scrolling and Section Fade-In -->
+    <script src="script.js"></script>
+</body>
+</html>

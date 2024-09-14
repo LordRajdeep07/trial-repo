@@ -1,0 +1,139 @@
+/* Base Styling for Body */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff6b6b, #f1c40f);
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+/* Login Container */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Login Card with shadow and animation */
+.login-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Logo */
+.logo {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+/* Input Fields with shadow and transition */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+/* Button with gradient background and hover effect */
+button {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  color: white;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease;
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0056b3, #003f8b);
+  transform: translateY(-3px);  /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
+}
+
+/* Forgot Password Link */
+.forgot-password {
+  display: block;
+  margin: 15px 0;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.forgot-password:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Sign-up text */
+p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+p a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Hover and focus effects for login card */
+.login-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .login-card {
+      padding: 30px;
+  }
+
+  button {
+      padding: 12px;
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-card {
+      padding: 20px;
+  }
+
+  button {
+      padding: 10px;
+      font-size: 14px;
+  }
+
+  input {
+      padding: 10px;
+      font-size: 14px;
+  }
+}
